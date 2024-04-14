@@ -1,10 +1,12 @@
-import { expect, test } from "vitest";
 import { render, screen } from "@testing-library/react";
+import { expect, test } from "vitest";
 import Greet from "./Greet";
 
 
-test('Render greet', () => { 
+test('Test Greet component',()=>{
     render(<Greet />)
-    const btn = screen.getByText('Greet')
-    expect(btn).toBeInTheDocument()
+
+    const greetEle = screen.getByTestId('greet')
+
+    expect(greetEle).toBeInTheDocument()
 })

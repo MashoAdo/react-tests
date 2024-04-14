@@ -1,7 +1,7 @@
 
 function Greet() {
   return (
-    <div>Greet</div>
+    <div data-testid='greet'>Greet</div>
   )
 }
 
