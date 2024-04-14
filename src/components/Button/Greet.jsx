@@ -1,7 +1,7 @@
 
-function Greet() {
+function Greet({name}) {
   return (
-    <div data-testid='greet'>Greet</div>
+    <div data-testid='greet'>Hello {name}</div>
   )
 }
 
